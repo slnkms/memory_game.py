@@ -90,7 +90,7 @@ def show_jelly():
 
     images = []
     for i in range(1, 9):
-        img_path = os.path.join(base_dir, f"jelly{i}.png")
+        img_path = os.path.join(base_dir, "assets", "images", "themes", "jelly", f"jelly{i}.png")
         img = Image.open(img_path)
         img = img.resize((80, 80))
         photo = ImageTk.PhotoImage(img)
@@ -99,8 +99,8 @@ def show_jelly():
     cards = images * 2
     random.shuffle(cards)
 
-    back_path = os.path.join(base_dir, "back.png")
-    back_image =ImageTk.PhotoImage(Image.open(back_path).resize((80, 80)))
+    back_path = os.path.join(base_dir, "assets", "images", "ui", "back.png")
+    back_image = ImageTk.PhotoImage(Image.open(back_path).resize((80, 80)))
 
     buttons = []
     flipped = []
@@ -148,7 +148,7 @@ def show_food():
 
     images = []
     for i in range(1, 9):
-        img_path = os.path.join(base_dir, f"food{i}.png")
+        img_path = os.path.join(base_dir, "assets", "images", "themes", "food", f"food{i}.png")
         img = Image.open(img_path).resize((80, 80))
         photo = ImageTk.PhotoImage(img)
         images.append(photo)
@@ -156,7 +156,7 @@ def show_food():
     cards = images * 2
     random.shuffle(cards)
 
-    back_path = os.path.join(base_dir, "back.png")
+    back_path = os.path.join(base_dir, "assets", "images", "ui", "back.png")
     back_image = ImageTk.PhotoImage(Image.open(back_path).resize((80, 80)))
 
     buttons = []
@@ -213,7 +213,7 @@ def show_bunny():
 
     images = []
     for i in range(1, 9):
-        img_path = os.path.join(base_dir, f"bunny{i}.png")
+        img_path = os.path.join(base_dir, "assets", "images", "themes", "bunny", f"bunny{i}.png")
         img = Image.open(img_path).resize((80, 80))
         photo = ImageTk.PhotoImage(img)
         images.append(photo)
@@ -221,7 +221,7 @@ def show_bunny():
     cards = images * 2
     random.shuffle(cards)
 
-    back_path = os.path.join(base_dir, "back.png")
+    back_path = os.path.join(base_dir, "assets", "images", "ui", "back.png")
     back_image = ImageTk.PhotoImage(Image.open(back_path).resize((80, 80)))
 
     buttons = []
@@ -388,7 +388,7 @@ def show_cat():
 
     images = []
     for i in range(1, 9):
-        img_path = os.path.join(base_dir, f"cat{i}.png")
+        img_path = os.path.join(base_dir, "assets", "images", "themes", "cats", f"cat{i}.png")
         img = Image.open(img_path).resize((80, 80))
         photo = ImageTk.PhotoImage(img)
         images.append(photo)
@@ -396,7 +396,7 @@ def show_cat():
     cards = images * 2
     random.shuffle(cards)
 
-    back_path = os.path.join(base_dir, "back.png")
+    back_path = os.path.join(base_dir, "assets", "images", "ui", "back.png")
     back_image = ImageTk.PhotoImage(Image.open(back_path).resize((80, 80)))
 
     buttons = []
